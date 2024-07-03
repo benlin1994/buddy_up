@@ -64,6 +64,21 @@ async function matchMembersInChannel(channel: string, client: any) {
     }
 }
 
+
+app.command('/help', async ({ say, command, ack, client }) => {
+    // await ack();
+
+    // await client.chat.postMessage({
+    //     token: process.env.SLACK_BOT_TOKEN,
+    //     channel: command.channel_id,
+    //     text: "Tips on how to use the MindWaffle Bot",
+    // });
+
+    say("Tips on how to use the MindWaffle Bot");
+
+});
+
+
 app.command('/buddy_up', async ({ command, ack, client }) => {
     await ack();
 
