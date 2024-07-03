@@ -66,7 +66,7 @@ async function matchMembersInChannel(channel: string, client: any) {
 
 
 app.command('/help', async ({ say, command, ack, client }) => {
-    // await ack();
+    await ack();
 
     await client.chat.postMessage({
         token: process.env.SLACK_BOT_TOKEN,
