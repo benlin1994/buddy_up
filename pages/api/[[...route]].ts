@@ -74,7 +74,7 @@ app.shortcut('help', async ({ ack, say}) => {
     //     text: "Tips on how to use the MindWaffle Bot",
     // });
 
-    say("Tips on how to use the MindWaffle Bot");
+    await say("Tips on how to use the MindWaffle Bot");
 
 });
 
