@@ -65,7 +65,7 @@ async function matchMembersInChannel(channel: string, client: any) {
 }
 
 
-app.shortcut('/help', async ({ ack, say}) => {
+app.shortcut('help', async ({ ack, say}) => {
     await ack();
 
     // await client.chat.postMessage({
